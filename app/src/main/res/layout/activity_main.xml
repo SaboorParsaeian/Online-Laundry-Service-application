@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="16dp"
+    android:background="#f2ecf4fa"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.onlinelaundryservice.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/toolbar"/>
+
+            <com.daimajia.slider.library.SliderLayout
+                android:id="@+id/slider"
+                android:layout_marginBottom="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                />
+
+
+
+            <LinearLayout
+                   android:layout_width="match_parent"
+                   android:orientation="horizontal"
+                   android:background="#ae054c"
+                   android:id="@+id/linearShowAllProduct"
+                   android:padding="4dp"
+                   android:layout_margin="16dp"
+                   android:gravity="center"
+                   android:layout_height="wrap_content">
+                    <ImageView
+                     android:layout_width="32dp"
+                     android:src="@drawable/washer"
+                     android:layout_height="32dp" />
+                   <TextView
+                     android:layout_width="wrap_content"
+                     android:textSize="20dp"
+                       android:layout_marginLeft="8dp"
+                     android:text="Order now"
+                     android:textColor="#ffffff"
+                     android:layout_height="wrap_content" />
+
+              </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:src="@drawable/iron"
+                        android:scaleType="centerCrop"
+                        android:layout_height="150dp" />
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:background="#FF045E81"
+                android:id="@+id/washIron"
+                android:padding="4dp"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="20dp"
+                    android:text="See how it works"
+                    android:textColor="#ffffff"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:src="@drawable/gothenburg"
+                        android:scaleType="centerCrop"
+                        android:layout_height="150dp" />
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:background="#FF045E81"
+                android:id="@+id/area"
+                android:padding="4dp"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:text="See If The Online Laundry Service Is Avalaible In Your Area"
+                    android:textColor="#ffffff"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

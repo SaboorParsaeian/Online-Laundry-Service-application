@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#f2ecf4fa"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="0.9"
+        android:gravity="left"
+        android:orientation="vertical"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:background="#469dbf"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_gravity="left"
+                        android:gravity="left"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:id="@+id/back"
+                            android:src="@drawable/back"
+                            android:scaleType="fitCenter"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_gravity="right"
+                        android:gravity="right"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Booking"
+                            android:textSize="24dp"
+                            android:layout_marginRight="8dp"
+                            android:paddingTop="8dp"
+                            android:textColor="#ffffff"
+                            android:layout_marginTop="8dp"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </android.support.v7.widget.Toolbar>
+        </LinearLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="32dp"
+            android:layout_height="wrap_content">
+
+           <TextView
+               android:layout_width="match_parent"
+               android:textColor="#000000"
+               android:textSize="18dp"
+               android:padding="16dp"
+               android:text="Is there anything we need to know?"
+               android:layout_height="wrap_content" />
+
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginTop="32dp"
+                android:drawablePadding="16dp"
+                android:hint="Delivery Instruction"
+                android:id="@+id/edtDescription"
+                android:layout_marginRight="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_height="wrap_content" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="32dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:padding="16dp"
+                android:text="Collecting Time"
+                android:layout_height="wrap_content" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="32dp"
+                        android:drawablePadding="16dp"
+                        android:hint="Date"
+                        android:id="@+id/inDate"
+                        android:layout_marginRight="24dp"
+                        android:layout_marginLeft="24dp"
+                        android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:background="#469dbf"
+                android:id="@+id/btnDate"
+                android:text="Pick a date"
+                android:layout_weight="0.5"
+                android:layout_height="0dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="32dp"
+                        android:drawablePadding="16dp"
+                        android:hint="Time"
+                        android:id="@+id/inTime"
+                        android:layout_marginRight="24dp"
+                        android:layout_marginLeft="24dp"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:layout_gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:textColor="#ffffff"
+                        android:layout_width="wrap_content"
+                        android:background="#469dbf"
+                        android:id="@+id/btnTime"
+                        android:text="Pick a time"
+                        android:layout_weight="0.5"
+                        android:layout_height="0dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="32dp"
+        android:layout_weight="0.05"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_height="0dp">
+
+
+        <TextView
+            android:background="#ae054c"
+            android:layout_width="wrap_content"
+            android:padding="16dp"
+            android:textColor="#ffffff"
+            android:id="@+id/placeOrder"
+            android:text="Place order"
+            android:textSize="18dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

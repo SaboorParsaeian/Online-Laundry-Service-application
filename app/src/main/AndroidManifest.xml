@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.onlinelaundryservice">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".G"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ActivitySplash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ActivityUserSignIn" />
+        <activity android:name=".ActivityUserSignUp" />
+        <activity android:name=".ActivityListProduct" />
+        <activity android:name=".ActivityTops" />
+        <activity android:name=".ActivityLaundry" />
+        <activity android:name=".ActivityBedding" />
+        <activity android:name=".ActivitySuits" />
+        <activity android:name=".ActivityKnitwear" />
+        <activity android:name=".ActivityDresses" />
+        <activity android:name=".ActivityTrousers" />
+        <activity android:name=".ActivityOutdoor" />
+        <activity android:name=".ActivityAccessories" />
+        <activity android:name=".ActivityHome" />
+        <activity android:name=".ActivityBusiness" />
+        <activity android:name=".SkipItems" />
+        <activity android:name=".HowWork" />
+        <activity android:name=".ActivityArea" />
+        <activity
+            android:name=".ActivityWait"
+            android:theme="@style/ActivityWait" />
+        <activity
+            android:name=".ActivityShow"
+            android:theme="@style/ActivityShow" />
+        <activity android:name=".ActivityFinalBasket" />
+        <activity
+            android:name=".ActivityWaitBasket"
+            android:theme="@style/ActivityWait" />
+        <activity
+            android:name=".ActivityWaitDeleteBasket"
+            android:theme="@style/ActivityWait" />
+        <activity android:name=".ActivityPay" />
+        <activity android:name=".ActivityAmazingSuggestion" />
+        <activity android:name=".Activity_FAQs" />
+        <activity android:name=".ActivityContactUs" />
+        <activity android:name=".ActivityAboutUs" />
+        <activity
+            android:name=".ActivityWaitPlaceOrder"
+            android:theme="@style/ActivityWait" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"></activity>
+    </application>
+
+</manifest>
